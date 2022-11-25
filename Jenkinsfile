@@ -19,7 +19,8 @@ pipeline {
 							sh 'docker push bilalahmed55/backend:latest'
 						} 
 					}
-			} 
-		}
-  }
+				}
+  			}
+  		}
+
 }
