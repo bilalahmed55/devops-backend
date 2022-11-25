@@ -11,5 +11,15 @@ pipeline {
 				}
 			} 
 		}
+
+	stage('Publish') {
+		steps{
+			script {
+				docker.withRegistry( '', registryCredential ) {
+					sh 'docker push bilalahmed55/backend:latest'
+				} 
+			}
+		} 
+	}
   }
 }
