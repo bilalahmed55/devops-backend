@@ -7,7 +7,7 @@ pipeline {
 		stage('Build') {
 				steps {
 					
-						sh 'docker build -t bilalahmed55/backend-python-app .'
+						sh 'docker build -t bilalahmed55/backend .'
 					
 				}
 			}
